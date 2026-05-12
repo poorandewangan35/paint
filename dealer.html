@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dealer Inquiry | USHA PAINTS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "inverse-primary": "#ffb4aa",
+                  "tertiary": "#303ff4",
+                  "surface-container": "#ffe9e6",
+                  "secondary-fixed": "#cbe6ff",
+                  "surface-dim": "#f6d2cd",
+                  "surface-container-low": "#fff0ee",
+                  "on-primary": "#ffffff",
+                  "on-surface": "#2a1614",
+                  "primary-fixed-dim": "#ffb4aa",
+                  "on-tertiary-fixed": "#000569",
+                  "error": "#ba1a1a",
+                  "on-primary-fixed": "#410002",
+                  "on-tertiary-fixed-variant": "#071be1",
+                  "tertiary-fixed": "#e0e0ff",
+                  "tertiary-container": "#5361ff",
+                  "on-error": "#ffffff",
+                  "surface": "#fff8f7",
+                  "surface-tint": "#c0000f",
+                  "secondary": "#006495",
+                  "inverse-surface": "#412b28",
+                  "on-tertiary": "#ffffff",
+                  "background": "#fff8f7",
+                  "inverse-on-surface": "#ffedea",
+                  "primary-container": "#e90617",
+                  "outline-variant": "#e9bcb6",
+                  "primary-fixed": "#ffdad5",
+                  "on-surface-variant": "#5e3f3b",
+                  "on-secondary-container": "#004366",
+                  "error-container": "#ffdad6",
+                  "on-secondary": "#ffffff",
+                  "primary": "#bb000e",
+                  "surface-container-highest": "#ffdad5",
+                  "surface-container-lowest": "#ffffff",
+                  "tertiary-fixed-dim": "#bec2ff",
+                  "secondary-container": "#3ab4ff",
+                  "on-primary-fixed-variant": "#930009",
+                  "on-secondary-fixed": "#001e30",
+                  "on-secondary-fixed-variant": "#004b71",
+                  "surface-variant": "#ffdad5",
+                  "on-tertiary-container": "#fffbff",
+                  "surface-container-high": "#ffe2de",
+                  "surface-bright": "#fff8f7",
+                  "secondary-fixed-dim": "#8fcdff",
+                  "outline": "#946e69",
+                  "on-error-container": "#93000a",
+                  "on-background": "#2a1614",
+                  "on-primary-container": "#fffbff"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "section-gap-desktop": "120px",
+                  "margin-desktop": "40px",
+                  "margin-mobile": "20px",
+                  "section-gap-mobile": "64px",
+                  "gutter": "24px",
+                  "container-max": "1280px",
+                  "base": "8px"
+          },
+          "fontFamily": {
+                  "display-lg": ["Plus Jakarta Sans"],
+                  "body-md": ["Plus Jakarta Sans"],
+                  "headline-lg": ["Plus Jakarta Sans"],
+                  "body-lg": ["Plus Jakarta Sans"],
+                  "headline-md": ["Plus Jakarta Sans"],
+                  "headline-lg-mobile": ["Plus Jakarta Sans"],
+                  "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+                  "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                  "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                  "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                  "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                  "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                  "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                  "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .paint-drip-gradient {
+      background: linear-gradient(180deg, #bb000e 0%, #bb000e 85%, transparent 100%);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface overflow-x-hidden">
+<!-- TopNavBar Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a href="index.html" class="flex items-center">
+<img src="logo.png" alt="USHA PAINTS Logo" class="h-10 md:h-12 w-auto object-contain" />
+</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="product.html">Products</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="about_us.html">About Us</a>
+<a class="font-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Dealers</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant p-2 hover:bg-primary-fixed/10 rounded-lg">search</button>
+<button class="hidden md:block hidden md:block bg-primary text-on-primary font-body-md px-6 py-2.5 rounded-full hover:shadow-lg transition-all active:scale-95">
+                    Get a Quote
+                </button>
+<button id="mobile-menu-btn" class="md:hidden material-symbols-outlined text-on-surface-variant active:scale-95 transition-transform">menu</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center overflow-hidden">
+<!-- Background Map Visualization -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent z-10"></div>
+<img class="w-full h-full object-cover opacity-30 grayscale mix-blend-multiply" data-alt="A highly detailed cartographic map of India presented in a minimalist, modern aesthetic. The map features subtle glowing nodes representing a vast distribution network across major cities. The lighting is soft and professional, with a clean light-mode atmosphere dominated by whites and soft greys, punctuated by vibrant primary red accents for the network connections." data-location="India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyQj4OxWSkWJHLx0PSutuUOrpQ02kEE-tAjEmHpQnHH_iaW-b1O4FRWhH15p3fKI-sy6fTy9yJHioZC-pen9kG8CjJwuR8rZ_UU_VV0U5vLsZmus74VJ9icWIU_NasOdUlHb7E6gS1B61ifxQhEEm9uQVIiLFCCpugAb7Mu_oiJxTMF4t_tQNU4W8JhDBp-T3V_2XWEwGQZ6P9qgyDMGAXH3kEUV14v9aUC9pavMiwNrQaNvvlZxJoUi5Tpni7vz3ygpdiYvHBoeU"/>
+</div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop max-w-container-max z-20 relative">
+<div class="max-w-2xl">
+<span class="font-label-sm uppercase tracking-[0.2em] text-primary mb-4 block">Expand Your Horizons</span>
+<h1 class="font-display-lg text-[40px] leading-[1.2] md:text-display-lg leading-[1.1] mb-6 text-on-surface">Partner with India's Most <span class="text-primary italic">Vibrant</span> Paint Brand</h1>
+<p class="font-body-lg text-on-surface-variant mb-10 max-w-lg">Unlock high-profit margins and unparalleled marketing support. Join our network of 5,000+ successful dealers across the country.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary font-body-md px-8 py-4 rounded-full hover:shadow-xl transition-all flex items-center gap-2 group" href="#inquiry-form">
+              Start Your Inquiry
+              <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<div class="flex items-center gap-3 px-6 py-4 glass-card rounded-full">
+<span class="material-symbols-outlined text-tertiary">verified</span>
+<span class="font-label-sm text-on-surface">ISO 9001:2015 Certified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Bento Grid -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop max-w-container-max">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4">Why Choose USHA PAINTS?</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl mx-auto">We provide the tools, the product, and the prestige to help your business flourish in the competitive landscape.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-white p-10 shadow-sm border border-outline-variant/30 hover:shadow-xl transition-all duration-500">
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-weight="fill">trending_up</span>
+<h3 class="font-headline-md text-headline-md mb-4">Exceptional Profit Margins</h3>
+<p class="font-body-md text-on-surface-variant max-w-md">Our dealer pricing structure is designed to maximize your ROI. With tiered bonuses and performance-linked incentives, we ensure your hard work pays off.</p>
+</div>
+<div class="mt-8 flex items-center gap-4">
+<span class="h-1 w-20 bg-primary/20 rounded-full overflow-hidden">
+<span class="block h-full w-2/3 bg-primary group-hover:w-full transition-all duration-700"></span>
+</span>
+<span class="font-label-sm text-primary">Industry Leading 35% ROE</span>
+</div>
+</div>
+<div class="absolute right-0 bottom-0 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-tertiary text-on-tertiary p-10 rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-6">campaign</span>
+<h3 class="font-headline-md text-headline-md mb-4">Marketing Powerhouse</h3>
+<p class="font-body-md opacity-80">From TVCs to local shop branding and digital lead generation, our marketing engine works 24/7 for you.</p>
+</div>
+<ul class="space-y-3 mt-8">
+<li class="flex items-center gap-2 font-label-sm"><span class="material-symbols-outlined text-base">check_circle</span> Store Signage Support</li>
+<li class="flex items-center gap-2 font-label-sm"><span class="material-symbols-outlined text-base">check_circle</span> Regional TV Ads</li>
+<li class="flex items-center gap-2 font-label-sm"><span class="material-symbols-outlined text-base">check_circle</span> Local SEO &amp; Maps</li>
+</ul>
+</div>
+<!-- Card 3 -->
+<div class="group bg-white p-10 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-xl transition-all duration-500">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">palette</span>
+<h3 class="font-headline-md text-headline-md mb-4">Vast Product Range</h3>
+<p class="font-body-md text-on-surface-variant">Over 2000+ shades across Interior, Exterior, Enamels, and industrial coatings to satisfy every customer demand.</p>
+<div class="mt-8 grid grid-cols-4 gap-2">
+<div class="aspect-square bg-primary/20 rounded-lg"></div>
+<div class="aspect-square bg-secondary/20 rounded-lg"></div>
+<div class="aspect-square bg-tertiary/20 rounded-lg"></div>
+<div class="aspect-square bg-primary-fixed/30 rounded-lg"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="md:col-span-2 group bg-inverse-surface text-inverse-on-surface p-10 rounded-xl flex flex-col md:flex-row gap-10 items-center">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl mb-6 text-inverse-primary">handshake</span>
+<h3 class="font-headline-md text-headline-md mb-4">Priority Logistics</h3>
+<p class="font-body-md text-outline-variant">Our dedicated distribution fleet ensures 24-hour fulfillment for 80% of our dealer network. Never lose a sale due to stock-outs.</p>
+</div>
+<div class="w-full md:w-1/3">
+<img class="rounded-lg shadow-lg rotate-3 group-hover:rotate-0 transition-transform duration-500" data-alt="A professional, brightly lit warehouse setting showcasing a modern logistics operation for USHA PAINTS. Neatly stacked pallets of colorful paint buckets are being moved by an electric forklift in a clean, high-tech industrial environment. The lighting is crisp and cool, maintaining a premium corporate modern aesthetic with accents of the brand's signature primary red on the shipping containers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb2mBCZ2eGpDipBAXlA3QVUA6BoEmxXxa5-R0l3qTl6YzyYNSM9g1YO9_ouvGZVFPIC5qC1OdEntSec1S_7FCj-oOuQMvIN-R8KeIEg_xO1fyDCnAFSjx1_Zx56pvBMwsQwlqcGdPjI6ffmtio1WA5POVPihu2SdkHmfl__Gcj6xNRdkWZ1yTO45XfY8DgknxlktRQOaiA2k9eUvRJOpXJLPyPz3OgqPT20hNKrgWF3-nswcgqX18Q_eOSXiqzTiTr3u2IHkiR_KY"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Multi-step Inquiry Form Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop relative overflow-hidden" id="inquiry-form">
+<div class="absolute top-0 right-0 -z-10 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent"></div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop max-w-container-max">
+<div class="flex flex-col lg:flex-row gap-20">
+<div class="lg:w-1/3">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg mb-6">Become an Authorized Partner</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">Complete the form below to start your journey with USHA PAINTS. Our regional manager will contact you within 48 hours for a site visit.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">1</div>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold mb-1">Fill the Form</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Tell us about your business goals and location.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 opacity-50">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center font-bold">2</div>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold mb-1">Phone Consultation</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Discuss investment details and region exclusivity.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 opacity-50">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center font-bold">3</div>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold mb-1">Site Approval</h4>
+<p class="font-body-md text-on-surface-variant text-sm">On-site verification and agreement signing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-2/3">
+<div class="glass-card p-8 md:p-12 rounded-2xl shadow-2xl border-white/40">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Business Name</label>
+<input class="w-full bg-surface border-outline-variant/30 rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="e.g. Modern Hardware &amp; Paints" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Your Name</label>
+<input class="w-full bg-surface border-outline-variant/30 rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="Full Name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Contact Number</label>
+<input class="w-full bg-surface border-outline-variant/30 rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="+91 XXXXX XXXXX" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface border-outline-variant/30 rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="contact@business.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Proposed Location / City</label>
+<input class="w-full bg-surface border-outline-variant/30 rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="e.g. Sector 12, Chandigarh" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-on-surface-variant">Current Business Type</label>
+<select class="w-full bg-surface border-outline-variant/30 rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none">
+<option>Hardware Store</option>
+<option>Paint Retailer (Multi-brand)</option>
+<option>New Entrepreneur</option>
+<option>Real Estate / Construction</option>
+<option>Others</option>
+</select>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="font-label-sm text-on-surface-variant">Warehouse / Showroom Size (sq. ft.)</label>
+<input class="w-full bg-surface border-outline-variant/30 rounded-xl p-4 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="Approximate area" type="number"/>
+</div>
+<div class="md:col-span-2 mt-4">
+<button class="w-full bg-primary text-on-primary font-headline-md py-5 rounded-xl hover:shadow-2xl hover:-translate-y-1 transition-all active:scale-95" type="submit">Submit Inquiry</button>
+<p class="text-center font-label-sm text-on-surface-variant mt-4">By submitting, you agree to our Privacy Policy and Dealer Terms.</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop max-w-container-max">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-center mb-16">Stories of Success</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant/20 relative">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-primary/10">
+<img alt="Dealer" data-alt="A professional portrait of a successful Indian business owner in a clean, modern office setting. He is smiling warmly, exuding confidence and professional mastery. The background is softly blurred with hints of USHA PAINTS branding and fresh architectural paint colors. The overall aesthetic is bright and optimistic, fitting the brand's 'Expertly Vibrant' persona." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuRjo9kaY_Z0WXxO8rZxq5MmxLDmHweT67ymhrhBtJ5lxkMzoS1PzuACeTsECc3ejm8sOYacOeZK5XRFOeuoai5avoVGx03XRNW35r63-7xOrNVG0Ll1wcXlv5dxJFQTAzM23iNMaz4mEShjvVdWVtoznXIuGj72LUMI1xA9JcQJt3W3Zkmg9zlaahCemFl7PAUOs5OsLKbeI9DsCRFkWPLuJtVic190LUkc8enZcTkNEAdt3gLjCy0fqEXZb6Ou6-T3SyQ9tW6hY"/>
+</div>
+<div>
+<h4 class="font-body-lg font-bold">Rajesh Mehra</h4>
+<p class="font-label-sm text-on-surface-variant">Dealer since 2018 | Punjab</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">"Switching to USHA PAINTS was the best decision for my business. Their marketing support in rural areas helped me capture the market in just 6 months. Profits have grown by 40% year-on-year."</p>
+<div class="mt-4 flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant/20">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-primary/10">
+<img alt="Dealer" data-alt="A portrait of a confident female entrepreneur in a contemporary retail paint showroom environment. She is dressed in smart business casual attire, standing before a vibrant wall of paint swatches. The lighting is bright and high-key, emphasizing a clean and professional atmosphere. The image perfectly encapsulates the lifestyle experience of a premium modern industrial brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmEmEUNaVFYBAUKRWECw4tm0UcJ6E7-cyYWKOQsQhnC6jqxizvtT0Nqf6LMgQ9Lj8v-NGSDq534OzrKWu3FTpmry9_CLUn2u6EWt00AWPF3WReJiEcGjKH5WV3r6LPwr6PEnIqUwMb-H9E8QEcZvMCV7NI0Pp1qyedbYdvfRMZfNbkrvWpymqwcZloOiME_S7cjx-RYgife5UQK1rbVd4CDVUAm6SYUtN_l9m60LwEjwV9SwWbyTya-UoP_InmMVxZWHFAKa8-Qe4"/>
+</div>
+<div>
+<h4 class="font-body-lg font-bold">Ananya Sharma</h4>
+<p class="font-label-sm text-on-surface-variant">Authorized Distributor | Noida</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">"The product quality is consistent and the color range is unmatched. Our customers love the 'Economy Acrylic Distemper' for its finish and price point. The company feels like family."</p>
+<div class="mt-4 flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant/20">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-primary/10">
+<img alt="Dealer" data-alt="A portrait of a professional middle-aged man who looks like an established businessman, set against a background of an industrial manufacturing facility. The facility is clean and well-ordered, with bright red industrial details that mirror the USHA PAINTS identity. The lighting is dramatic yet professional, highlighting his expertise and the brand's rugged reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ1Khj3oAnwE-6moMeaX_ptJrQWjhQHfuEA_DKHqFtvadAisq41_pW1LUw5DT1Jd0swd_jbMWkarrc1Vx2QU17j8WEI3xPIRv0gC3hiW6d5hDfBtkAATgyh8Ob43-5P-i6d1uKpdhKsGSZ8l-5q_JIdJRGIXopKIf4JWaHIviHtyv-BY-d412Q1YHxPTrAZzjo3NgLqeWO_pVrv1haNSZtzsZ_DmH6EArhVdJuK3SrlU1df1P8MerqERqIYsgvoIGTXMM0ve7mSEM"/>
+</div>
+<div>
+<h4 class="font-body-lg font-bold">Vikram Singh</h4>
+<p class="font-label-sm text-on-surface-variant">Dealer since 2012 | Jaipur</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">"Logistics are impeccable. Even during peak renovation seasons, USHA PAINTS never fails to deliver. Their dealer portal makes stock management a breeze."</p>
+<div class="mt-4 flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop max-w-container-max">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-center mb-12">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<details class="group bg-white rounded-xl shadow-sm border border-outline-variant/30 open:shadow-md transition-all">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="font-headline-md text-body-lg font-bold">What is the minimum investment required?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-on-surface-variant">
+                The minimum investment varies by city tier (Tier 1/2/3). Generally, it ranges from ₹5 Lakhs to ₹15 Lakhs, covering stock, shop branding, and working capital.
+              </div>
+</details>
+<details class="group bg-white rounded-xl shadow-sm border border-outline-variant/30 open:shadow-md transition-all">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="font-headline-md text-body-lg font-bold">Do I need prior experience in the paint industry?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-on-surface-variant">
+                While experience in hardware or construction is beneficial, it is not mandatory. We provide comprehensive training for you and your staff on product technicalities and sales.
+              </div>
+</details>
+<details class="group bg-white rounded-xl shadow-sm border border-outline-variant/30 open:shadow-md transition-all">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="font-headline-md text-body-lg font-bold">How do I get marketing support for my local shop?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-on-surface-variant">
+                Upon approval, USHA PAINTS provides standardized Glow-sign boards, interior branding materials, color shade cards, and catalogs free of cost. We also fund 50% of local newspaper or radio advertisements for authorized dealers.
+              </div>
+</details>
+<details class="group bg-white rounded-xl shadow-sm border border-outline-variant/30 open:shadow-md transition-all">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="font-headline-md text-body-lg font-bold">What is the delivery turnaround time?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 font-body-md text-on-surface-variant">
+                With our strategic regional depots, we maintain a 24-48 hour delivery timeline for all major cities and up to 72 hours for remote locations.
+              </div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="relative bg-primary py-24 overflow-hidden">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop max-w-container-max relative z-10 text-center">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mb-8">Ready to paint your future with us?</h2>
+<a class="inline-flex bg-on-primary text-primary font-headline-md px-10 py-5 rounded-full hover:scale-105 transition-all shadow-2xl" href="#inquiry-form">Register Interest Now</a>
+</div>
+</section>
+</main>
+<!-- Footer Navigation Shell -->
+<footer class="w-full rounded-t-xl bg-surface-container-lowest border-t-4 border-tertiary shadow-2xl-up mt-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<img src="logo.png" alt="USHA PAINTS Logo" class="h-10 w-auto object-contain mb-6" />
+<p class="font-body-md text-on-surface-variant mb-6">Leading the Indian paint revolution since 1985 with quality that inspires creativity.</p>
+<div class="flex gap-4">
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary" href="#">facebook</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary" href="#">video_library</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary" href="#">groups</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline-md text-body-lg font-bold mb-6">Products</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Interior Paints</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Exterior Paints</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Enamels</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Wall Putty</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline-md text-body-lg font-bold mb-6">Dealer Portal</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Inquiry Form</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Dealer Login</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Guidelines</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Distempers</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline-md text-body-lg font-bold mb-6">Newsletter</h4>
+<p class="font-body-md text-on-surface-variant mb-4">Get the latest color trends and business insights.</p>
+<div class="flex gap-2">
+<input class="w-full bg-surface border-outline-variant/30 rounded-lg p-3 text-sm" placeholder="Your Email" type="email"/>
+<button class="bg-tertiary text-on-tertiary p-3 rounded-lg material-symbols-outlined">send</button>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/20 py-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-on-surface-variant text-sm">© 2024 USHA PAINTS. All Rights Reserved. Manufactured with Excellence.</p>
+<div class="flex gap-6">
+<a class="font-body-md text-on-surface-variant text-sm hover:underline decoration-tertiary underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant text-sm hover:underline decoration-tertiary underline-offset-4" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-surface flex flex-col pt-24 px-6 gap-6 transform translate-x-full transition-transform duration-300 md:hidden overflow-y-auto pb-10">
+  <div class="flex justify-between items-center absolute top-0 left-0 right-0 h-20 px-6">
+    <a href="index.html" class="flex items-center">
+      <img src="logo.png" alt="USHA PAINTS Logo" class="h-10 w-auto object-contain" />
+    </a>
+    <button id="mobile-menu-close" class="text-on-surface p-2">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4 mt-8" href="index.html">Home</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="product.html">Products</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="about_us.html">About Us</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="dealer.html">Dealers</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="contact.html">Contact</a>
+  <button class="bg-primary text-on-primary px-5 py-3 rounded-full font-bold text-base mt-4 active:scale-95 transition-all">
+    Get a Quote
+  </button>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-menu-close');
+    if(mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+      });
+    }
+    if(mobileClose && mobileMenu) {
+      mobileClose.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+      });
+    }
+  });
+</script>
+
+
+</body>
+</html>

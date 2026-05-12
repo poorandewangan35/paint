@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | USHA PAINTS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#ffb4aa",
+                      "tertiary": "#303ff4",
+                      "surface-container": "#ffe9e6",
+                      "secondary-fixed": "#cbe6ff",
+                      "surface-dim": "#f6d2cd",
+                      "surface-container-low": "#fff0ee",
+                      "on-primary": "#ffffff",
+                      "on-surface": "#2a1614",
+                      "primary-fixed-dim": "#ffb4aa",
+                      "on-tertiary-fixed": "#000569",
+                      "error": "#ba1a1a",
+                      "on-primary-fixed": "#410002",
+                      "on-tertiary-fixed-variant": "#071be1",
+                      "tertiary-fixed": "#e0e0ff",
+                      "tertiary-container": "#5361ff",
+                      "on-error": "#ffffff",
+                      "surface": "#fff8f7",
+                      "surface-tint": "#c0000f",
+                      "secondary": "#006495",
+                      "inverse-surface": "#412b28",
+                      "on-tertiary": "#ffffff",
+                      "background": "#fff8f7",
+                      "inverse-on-surface": "#ffedea",
+                      "primary-container": "#e90617",
+                      "outline-variant": "#e9bcb6",
+                      "primary-fixed": "#ffdad5",
+                      "on-surface-variant": "#5e3f3b",
+                      "on-secondary-container": "#004366",
+                      "error-container": "#ffdad6",
+                      "on-secondary": "#ffffff",
+                      "primary": "#bb000e",
+                      "surface-container-highest": "#ffdad5",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#bec2ff",
+                      "secondary-container": "#3ab4ff",
+                      "on-primary-fixed-variant": "#930009",
+                      "on-secondary-fixed": "#001e30",
+                      "on-secondary-fixed-variant": "#004b71",
+                      "surface-variant": "#ffdad5",
+                      "on-tertiary-container": "#fffbff",
+                      "surface-container-high": "#ffe2de",
+                      "surface-bright": "#fff8f7",
+                      "secondary-fixed-dim": "#8fcdff",
+                      "outline": "#946e69",
+                      "on-error-container": "#93000a",
+                      "on-background": "#2a1614",
+                      "on-primary-container": "#fffbff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap-desktop": "120px",
+                      "margin-desktop": "40px",
+                      "margin-mobile": "20px",
+                      "section-gap-mobile": "64px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "headline-lg": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "headline-lg-mobile": ["Plus Jakarta Sans"],
+                      "label-sm": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a href="index.html" class="flex items-center">
+<img src="logo.png" alt="USHA PAINTS Logo" class="h-10 md:h-12 w-auto object-contain" />
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="product.html">Products</a>
+<a class="text-primary dark:text-inverse-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="dealer.html">Dealers</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block hidden md:flex items-center px-6 py-2.5 bg-primary-container text-on-primary-container rounded-full font-bold text-body-md transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
+                    Get a Quote
+                </button>
+<button id="mobile-menu-btn" class="md:hidden text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A macro shot of a textured concrete wall with vibrant liquid paint splashes in red, yellow, and turquoise blue trailing down the surface. The lighting is dramatic and cinematic, highlighting the thick consistency and glossy finish of the professional-grade industrial paint. The composition uses high-key lighting to maintain a bright, premium aesthetic consistent with a modern corporate brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlm8Inb94SlVw0qR_bjEI0NN3VaZJt_vaDDGxW31edbvzcWMuYEcdL9IbPwN6RxRh1lbI-gPJDujkn26DppD6hiTitXLxeO425Zns1sj7bs-lb_-bdOxaEVqFad7uXogHiIvNNuzzDXYBjpskHYufBnNK-Al1csU1lpYLED8cd5CHsp-G3lNAN1SERi-ZNVPza6o06m2DJcaA63Y9dKCjB7dx9OyYPKwacZ3r0MwES5lYDarAISkELN0O3-G8FG75dlfTuLCe7ynE"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl">
+<span class="text-primary font-bold text-label-sm tracking-[0.2em] mb-4 block">SINCE 1994</span>
+<h1 class="font-display-lg text-[40px] leading-[1.2] md:text-display-lg text-on-surface mb-6 leading-tight">Our Legacy of <span class="text-primary">Colours</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">Transforming industrial excellence into a vibrant lifestyle through three decades of manufacturing mastery in Gujarat.</p>
+<div class="flex gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-xl font-bold transition-all hover:shadow-xl hover:bg-primary/90">Explore Heritage</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Company Story -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/10 rounded-3xl blur-2xl transition-all group-hover:bg-primary-container/20"></div>
+<img class="relative rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover" data-alt="A clean, wide-angle interior shot of a high-tech paint manufacturing facility located in Gujarat, India. Large, polished stainless steel mixing tanks dominate the space, reflecting soft overhead LED lighting. The floor is a pristine, light-colored epoxy resin, and the overall atmosphere is professional, sterile, and industrially advanced, emphasizing manufacturing excellence and safety." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-ByxoJNCdX8XTJLFjBJ25xkRV-H3SHL58J84nw5vRehwuC0AFGYypWwv0C3GlPXIyKKqD_DJRQ1CHAxFhe7XpBGKKTgmuar3vsMn7YW25tRxw-li-r0VRK_Pdq7FShjxnvnjzMF6K7FOzsY2RRQZy6bAbm2q1qW09T0xsIViM8gaBSe_C2NhIZyR08H_sF8XGHP_hZCUm7xs8uQLV0i4A6jBNZEY6P3_2-1x4rO_PwaO3plGBvZDYKq11BDd7AJofimjTLxLV_48"/>
+</div>
+<div class="space-y-8">
+<div class="inline-block p-2 px-4 rounded-full bg-surface-container-highest text-primary font-bold text-label-sm">THE JOURNEY</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Precision in Every Batch, Pride in Every Palette.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Founded in the heart of Gujarat, USHA PAINTS began with a single vision: to create industrial-grade coatings that don't just protect, but inspire. Over 30 years, we've evolved from a local manufacturer into a regional leader in Economy Acrylic Distempers and high-performance enamels.</p>
+<div class="grid grid-cols-2 gap-gutter">
+<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/30">
+<div class="text-primary font-display-lg text-headline-lg-mobile md:text-headline-lg mb-1">30+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Years of Trust</div>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/30">
+<div class="text-secondary font-display-lg text-headline-lg-mobile md:text-headline-lg mb-1">150+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Premium Shades</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Foundation of Excellence</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Our values are the pigments that define the character of USHA PAINTS.</p>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Innovation -->
+<div class="group relative p-8 rounded-3xl glass-card border border-white/50 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center mb-6 text-on-primary-container">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">lightbulb</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Innovation</h3>
+<p class="text-on-surface-variant">Constantly refining our chemical compositions to deliver longer-lasting finishes and superior coverage for modern structures.</p>
+<div class="mt-8 flex items-center text-primary font-bold gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Quality -->
+<div class="group relative p-8 rounded-3xl glass-card border border-white/50 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl group-hover:bg-secondary/20 transition-colors"></div>
+<div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-6 text-on-secondary-container">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Quality</h3>
+<p class="text-on-surface-variant">Every bucket of USHA PAINTS undergoes rigorous lab testing to ensure weather resistance and color retention in harsh climates.</p>
+<div class="mt-8 flex items-center text-secondary font-bold gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Sustainability -->
+<div class="group relative p-8 rounded-3xl glass-card border border-white/50 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-tertiary/10 rounded-full blur-3xl group-hover:bg-tertiary/20 transition-colors"></div>
+<div class="w-16 h-16 bg-tertiary-container rounded-2xl flex items-center justify-center mb-6 text-on-tertiary-container">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Sustainability</h3>
+<p class="text-on-surface-variant">We are committed to eco-friendly manufacturing processes and low-VOC formulations for a healthier living environment.</p>
+<div class="mt-8 flex items-center text-tertiary font-bold gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Manufacturing Process -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end gap-gutter mb-16">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">The Alchemy of Pigments</h2>
+<p class="text-on-surface-variant">A meticulous multi-stage process where raw chemicals are transformed into the vibrant hues of USHA PAINTS.</p>
+</div>
+<div class="flex gap-4">
+<button class="p-3 border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="p-3 border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="flex gap-gutter overflow-x-auto pb-8 snap-x no-scrollbar">
+<div class="min-w-[320px] snap-start group">
+<div class="relative mb-6 rounded-2xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A close-up artistic shot of raw mineral pigments in powdered form being carefully measured. The fine dust of red, yellow, and blue creates a beautiful, abstract colorful landscape. Soft, warm lighting highlights the varied textures of the pigments, emphasizing the start of the paint manufacturing journey." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu21bxkqgr5wVRmAHlsj_4EAYJLIFk0g7X4FfPUX2QWUYDILbx-vq_6sdzzeofAA0YBm5AftU-hbg4a_CWP1GFeGGjUXFGQz7qo_IP-Y8_6piK-jWKVVKKmX2v-dZotNuTic86-dt_XFAOnyNocsJvrOpZB1ogYH5qHdG_lxDW4WkxHlGjr-j0DyXJBDefacQ4KL6HZR0r8wz9OKHvafAnIpwjhXFUHrI-zItEuNxXreInlGjLJF_XmgrpPhUrtLe9zCEc8rRXFog"/>
+<div class="absolute top-4 left-4 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center font-bold text-primary">01</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Pigment Selection</h4>
+<p class="text-on-surface-variant">Sourcing premium minerals and binders from globally certified suppliers.</p>
+</div>
+<div class="min-w-[320px] snap-start group">
+<div class="relative mb-6 rounded-2xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A macro shot of a large industrial paint mixer in motion. Swirling waves of white base paint are being combined with deep red colorant, creating a mesmerizing spiral of colors. High-speed shutter captures the glossy peaks and valleys of the thick liquid, illustrating the intensive blending phase of production." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKxzVLc9m4abMFRD0uBrkFputGjwtOX7Kb_7Jfcfvbvn0E-9EP6L8-eGWxO0-KSiRCv4lmVJfXKZcLiGyNNnVk9nqXg2yODN-O3hyTVG_b8_OBrvnChNuBvKoCleT5WrIgVGSrpJr4dkuQT4ID4dRUIJsLGu51KpVqpOBO6KpvTisZebBfx13uik55u438pmywlZGYsjn2lfAxooWKIW1KuQVSwJu7j-2g1Hbh-d4AZ2d1VeOZ6Uq6-5-xRo6FDIEYmjyZ-HWRPTI"/>
+<div class="absolute top-4 left-4 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center font-bold text-primary">02</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">High-Speed Blending</h4>
+<p class="text-on-surface-variant">Uniform mixing of base acrylics and colorants using advanced hydraulic dispersers.</p>
+</div>
+<div class="min-w-[320px] snap-start group">
+<div class="relative mb-6 rounded-2xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A professional lab technician in a clean, white coat using a precision instrument to test a paint sample on a white board. The scene is bright and meticulously organized, with rows of glass vials and testing equipment in the background. The mood is focused and technical, highlighting the quality control aspect of the paint manufacturing process." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLrYtmKlTiCVeSaJXs-I-cvL5EbL8vGbWuf0rL4sBIyj_Yv5L4niafKivD36zrmIQbhchdIYNxCiyKNrMJWOSldc4cjAWPpO1SwK69U9n9qSfMpKV7LO9s9a_hLJXvvXxrCdcv6JCLuTGWm9UVzCSSsB1dRyY8Y_Lmud5hd-f2SOgnV7Sad0fVG3VARiB2FUUBeBlHNha6NbuAnHYAPpg6iURerCqpUcfgI1-CM_Cp7EQxiweoEUrmGYl3P6uI8aCHMeAG70xa958"/>
+<div class="absolute top-4 left-4 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center font-bold text-primary">03</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Lab Assessment</h4>
+<p class="text-on-surface-variant">Testing for viscosity, opacity, and weather endurance against ISO standards.</p>
+</div>
+<div class="min-w-[320px] snap-start group">
+<div class="relative mb-6 rounded-2xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A modern automated packaging line where freshly sealed paint buckets, branded with the USHA PAINTS logo, move along a conveyor belt. The factory lighting is bright and clean, reflecting off the white lids of the buckets. The scene captures the final stage of manufacturing, conveying a sense of high-volume efficiency and reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0HMb29x9tPWhFAYvWec8DbU-_CizkPxW9AsP1WOtdb7rh0UBD8UKfklBECpQ9qj6d4YoeLTEP5h1sayAL_E8BSXuWOtBdJwv25a_eengZV9o9hKUKc_oW_CYCM1Suh-TFZvBWSh2QBXSOkmZTiRAyRrhnSsK1h9br1jREp-teeltJkCLjrc89XQLb_PIoBwV5PEBie-za8LvOarvTs08d5V0WaXyYFw7Oh6MRpqeikZo-61uXGGXxJ_r8-Nd8_4IzanWrhONAJ-E"/>
+<div class="absolute top-4 left-4 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center font-bold text-primary">04</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Automated Packaging</h4>
+<p class="text-on-surface-variant">Precision filling and sealing to ensure tamper-proof delivery to your doorstep.</p>
+</div>
+</div>
+</section>
+<!-- Leadership Team -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-dim/30">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Visionaries Behind the Hues</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Meet the experts driving industrial innovation and excellence at USHA PAINTS.</p>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Team Member -->
+<div class="group">
+<div class="relative mb-6 rounded-2xl overflow-hidden glass-card p-2 aspect-[3/4]">
+<img class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A professional studio portrait of a senior male executive in a well-tailored navy suit, standing confidently against a soft, blurred background with subtle warm lighting. The image conveys authority, experience, and trust, reflecting the leadership of a major manufacturing company like USHA PAINTS." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnPd0fhi0AiPfunurRBAiLG2v6qG1BmevP-i18Cr0Izrxtzs-iE-bXbhVOL1HHiynrB_7pmxKk0gtBk6gt6WkiIdjpXAWRbaEVD0HIRhDixbHMUbKSAeL9ZHcr3X4fklfiqZOi5I9f3mpQYALdaI2i7r3xOdNVfxlgQmfFnDAtBcakc5-Zp4Q8HyTi4G5s_Y0gZwhZ-najGb5FFilr7JSS0ImWJOuv1bkFRI-X1CEiVxv-jvrzTDrnx-_l-L_FqX5j2b6ZZkFJY6k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="text-white">
+<p class="text-label-sm uppercase font-bold tracking-widest">Managing Director</p>
+</div>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Rajesh Mehta</h4>
+<p class="text-on-surface-variant">30+ Years Industry Veteran</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group">
+<div class="relative mb-6 rounded-2xl overflow-hidden glass-card p-2 aspect-[3/4]">
+<img class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A professional studio portrait of a woman executive in her 40s, dressed in a sharp business casual blazer. She has a friendly yet professional expression. The background is a clean, minimalist studio setting with soft side-lighting that adds a premium feel to the headshot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK69FH3Gf-mYoAx9imGwsBA7jAaYLWwmSpAuGvg9Oas8AqcZwCjtAUgtC0Fd0oqWlAmjXENF0BBN8ktEvQsmC9SLBbFqMEoSfjGMMHDmfNVaNHK2gn3BW27Vwq3BptB1euFKvI4kue1ai3oMlyVt05iRbpmQLoPeNn3AWA4lMhECiSCHnF_AnZnSybeHOKcWlBXizIr9SUrbnhe-z71VRJ5luGt4bl5EScutTZ9mG5gg4be4WkVBPInkn5Br1msNqUbIN06B4oJ-c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="text-white">
+<p class="text-label-sm uppercase font-bold tracking-widest">Director of R&amp;D</p>
+</div>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Anjali Shah</h4>
+<p class="text-on-surface-variant">Chemical Engineering Specialist</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group">
+<div class="relative mb-6 rounded-2xl overflow-hidden glass-card p-2 aspect-[3/4]">
+<img class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A professional portrait of a mid-career male executive with a confident smile, wearing a modern business suit. The lighting is bright and airy, and the shallow depth of field keeps the focus entirely on his friendly face, suggesting a company culture of accessibility and professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsEJCEPM3TqnIt3X_sbsJQ9TTl-3kVKUqKrbGEimnGZkM-u8G_H2fxcMuTeBff-RBucZdhuSGDlPK4dX2Eny5xCJ4TevEB3YGY8-mjSjN_gK0BtdACUQAnHwbcq_195lgSjjfkA8SEZOYOPoG4WfBab8QA7mufzcO5BGPU8imqLva-HDT7BWg80hNGDMcPz3E3kiaYjBPZUTtSy6JDvwRkb97J4gN8YVOzTCrN88LvLdiQQxkxAs2So0fsCduGIzpWo9x-kmFm3Jg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="text-white">
+<p class="text-label-sm uppercase font-bold tracking-widest">Operations Head</p>
+</div>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Vikram Patel</h4>
+<p class="text-on-surface-variant">Supply Chain Expert</p>
+</div>
+<!-- Team Member 4 -->
+<div class="group">
+<div class="relative mb-6 rounded-2xl overflow-hidden glass-card p-2 aspect-[3/4]">
+<img class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A professional studio portrait of a young male executive in a contemporary professional outfit. He has an intelligent and creative look, symbolizing the modern future of USHA PAINTS. The lighting is crisp and modern, creating a high-contrast, premium aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC738ACS7-_gHxjSAep6YXYDdQ3HEw_Ou4ZQYT0hQYkey8RIhR_6g4dSkdxBKfIj12SQpV97PCwAPecKRF_LfdWoy35xnkT2Cv7UfW_DnGVZK_11Pz0TuFWz8J34iYXsmdRFmwPY2Mq6jASb7rvXbhD40riL5ewh_m5KBpKkQaMGNzv1iZKIWpAoSuhNLBrLZ4nqXEcNE_GVe2creco2S1TD4W7AthSaKqJxC0MUXXNkB9n14jLDZioans6XKhVX_hh6IfpVWTTqWg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<div class="text-white">
+<p class="text-label-sm uppercase font-bold tracking-widest">Marketing Director</p>
+</div>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Siddharth Desai</h4>
+<p class="text-on-surface-variant">Brand &amp; Growth Strategist</p>
+</div>
+</div>
+</section>
+<!-- Trust & Certifications -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant/30">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter opacity-60">
+<div class="flex flex-col items-center gap-4 text-center group transition-all hover:opacity-100">
+<span class="material-symbols-outlined text-5xl text-primary">workspace_premium</span>
+<p class="font-bold text-on-surface">ISO 9001:2015 Certified</p>
+</div>
+<div class="flex flex-col items-center gap-4 text-center group transition-all hover:opacity-100">
+<span class="material-symbols-outlined text-5xl text-secondary">verified_user</span>
+<p class="font-bold text-on-surface">Bureau of Indian Standards</p>
+</div>
+<div class="flex flex-col items-center gap-4 text-center group transition-all hover:opacity-100">
+<span class="material-symbols-outlined text-5xl text-tertiary">health_and_safety</span>
+<p class="font-bold text-on-surface">Non-Toxic Formulations</p>
+</div>
+<div class="flex flex-col items-center gap-4 text-center group transition-all hover:opacity-100">
+<span class="material-symbols-outlined text-5xl text-primary">public</span>
+<p class="font-bold text-on-surface">Made in India</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-on-surface w-full rounded-t-xl border-t-4 border-tertiary shadow-2xl-up mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<img src="logo.png" alt="USHA PAINTS Logo" class="h-10 w-auto object-contain mb-6" />
+<p class="text-on-surface-variant dark:text-outline font-body-md text-body-md">Established in 1994, USHA PAINTS is a leading manufacturer of premium wall coatings and industrial paints in Gujarat.</p>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary transition-all hover:bg-primary hover:text-white cursor-pointer">
+<span class="material-symbols-outlined">share</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary transition-all hover:bg-primary hover:text-white cursor-pointer">
+<span class="material-symbols-outlined">mail</span>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h5 class="font-bold text-on-surface dark:text-white">Our Products</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:underline decoration-tertiary decoration-2 underline-offset-4" href="#">Interior Paints</a></li>
+<li><a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:underline decoration-tertiary decoration-2 underline-offset-4" href="#">Exterior Paints</a></li>
+<li><a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:underline decoration-tertiary decoration-2 underline-offset-4" href="#">Enamels</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="font-bold text-on-surface dark:text-white">Quick Links</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:underline decoration-tertiary decoration-2 underline-offset-4" href="#">Wall Putty</a></li>
+<li><a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:underline decoration-tertiary decoration-2 underline-offset-4" href="#">Distempers</a></li>
+<li><a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:underline decoration-tertiary decoration-2 underline-offset-4" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="font-bold text-on-surface dark:text-white">Newsletter</h5>
+<p class="text-on-surface-variant dark:text-outline text-sm">Subscribe to get color inspiration and product updates.</p>
+<div class="relative">
+<input class="w-full bg-surface rounded-xl border-outline-variant py-3 px-4 focus:ring-primary focus:border-primary" placeholder="Your Email" type="email"/>
+<button class="absolute right-2 top-2 bg-primary text-white p-1 rounded-lg">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 py-8 px-margin-mobile md:px-margin-desktop text-center">
+<p class="text-on-surface-variant dark:text-outline font-body-md text-body-md">© 2024 USHA PAINTS. All Rights Reserved. Manufactured with Excellence.</p>
+</div>
+</footer>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-surface flex flex-col pt-24 px-6 gap-6 transform translate-x-full transition-transform duration-300 md:hidden overflow-y-auto pb-10">
+  <div class="flex justify-between items-center absolute top-0 left-0 right-0 h-20 px-6">
+    <a href="index.html" class="flex items-center">
+      <img src="logo.png" alt="USHA PAINTS Logo" class="h-10 w-auto object-contain" />
+    </a>
+    <button id="mobile-menu-close" class="text-on-surface p-2">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4 mt-8" href="index.html">Home</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="product.html">Products</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="about_us.html">About Us</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="dealer.html">Dealers</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="contact.html">Contact</a>
+  <button class="bg-primary text-on-primary px-5 py-3 rounded-full font-bold text-base mt-4 active:scale-95 transition-all">
+    Get a Quote
+  </button>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-menu-close');
+    if(mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+      });
+    }
+    if(mobileClose && mobileMenu) {
+      mobileClose.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+      });
+    }
+  });
+</script>
+
+
+</body>
+</html>

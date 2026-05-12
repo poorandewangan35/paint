@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contact Us | USHA PAINTS</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-primary": "#ffb4aa",
+            "tertiary": "#303ff4",
+            "surface-container": "#ffe9e6",
+            "secondary-fixed": "#cbe6ff",
+            "surface-dim": "#f6d2cd",
+            "surface-container-low": "#fff0ee",
+            "on-primary": "#ffffff",
+            "on-surface": "#2a1614",
+            "primary-fixed-dim": "#ffb4aa",
+            "on-tertiary-fixed": "#000569",
+            "error": "#ba1a1a",
+            "on-primary-fixed": "#410002",
+            "on-tertiary-fixed-variant": "#071be1",
+            "tertiary-fixed": "#e0e0ff",
+            "tertiary-container": "#5361ff",
+            "on-error": "#ffffff",
+            "surface": "#fff8f7",
+            "surface-tint": "#c0000f",
+            "secondary": "#006495",
+            "inverse-surface": "#412b28",
+            "on-tertiary": "#ffffff",
+            "background": "#fff8f7",
+            "inverse-on-surface": "#ffedea",
+            "primary-container": "#e90617",
+            "outline-variant": "#e9bcb6",
+            "primary-fixed": "#ffdad5",
+            "on-surface-variant": "#5e3f3b",
+            "on-secondary-container": "#004366",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "primary": "#bb000e",
+            "surface-container-highest": "#ffdad5",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#bec2ff",
+            "secondary-container": "#3ab4ff",
+            "on-primary-fixed-variant": "#930009",
+            "on-secondary-fixed": "#001e30",
+            "on-secondary-fixed-variant": "#004b71",
+            "surface-variant": "#ffdad5",
+            "on-tertiary-container": "#fffbff",
+            "surface-container-high": "#ffe2de",
+            "surface-bright": "#fff8f7",
+            "secondary-fixed-dim": "#8fcdff",
+            "outline": "#946e69",
+            "on-error-container": "#93000a",
+            "on-background": "#2a1614",
+            "on-primary-container": "#fffbff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-gap-desktop": "120px",
+            "margin-desktop": "40px",
+            "margin-mobile": "20px",
+            "section-gap-mobile": "64px",
+            "gutter": "24px",
+            "container-max": "1280px",
+            "base": "8px"
+          },
+          "fontFamily": {
+            "display-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .paint-splash-bg {
+      background: radial-gradient(circle at 10% 20%, rgba(187, 0, 14, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(48, 63, 244, 0.05) 0%, transparent 40%);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden paint-splash-bg">
+  <!-- TopNavBar -->
+  <header
+    class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm">
+    <nav
+      class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <a href="index.html" class="flex items-center">
+        <img src="logo.png" alt="USHA PAINTS Logo" class="h-10 md:h-12 w-auto object-contain" />
+      </a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md"
+          href="index.html">Home</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md"
+          href="product.html">Products</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md"
+          href="about_us.html">About Us</a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md"
+          href="dealer.html">Dealers</a>
+        <a class="text-primary dark:text-inverse-primary font-bold border-b-2 border-primary pb-1 font-body-md"
+          href="#">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <button
+          class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-headline-md text-[16px] transition-all duration-300 hover:shadow-lg active:scale-95">
+          Get a Quote
+        </button>
+        <button class="md:hidden text-primary">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop">
+      <div class="max-w-container-max mx-auto flex flex-col items-center text-center">
+        <div class="inline-flex items-center gap-2 bg-surface-container rounded-full px-4 py-1.5 mb-6">
+          <span class="material-symbols-outlined text-primary text-[20px]"
+            style="font-variation-settings: 'FILL' 1;">support_agent</span>
+          <span class="font-label-sm text-primary uppercase tracking-widest">Customer First</span>
+        </div>
+        <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight">
+          We're Here <br class="md:hidden" /><span class="text-primary">to Help</span>
+        </h1>
+        <p class="max-w-2xl font-body-lg text-on-surface-variant mb-10">
+          Experience the expertise of USHA Paints. Whether you have a question about our vibrant color palettes or need
+          professional guidance for your industrial projects, our team is ready to assist.
+        </p>
+        <div class="w-full h-[400px] rounded-3xl overflow-hidden shadow-2xl relative">
+          <img class="w-full h-full object-cover"
+            data-alt="A clean, high-end professional customer support center with soft, cinematic lighting and a modern industrial aesthetic. The workspace features sleek white desks, high-quality technology, and pops of vibrant red and blue from the USHA Paints brand. In the background, large windows let in natural light, creating a bright and airy atmosphere consistent with a premium paint manufacturer's headquarters."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2H2W-28WVKbeE6oZwEJLn9sYUC2LghJmtsSCsbJEjy146kmuWqdlWPKaEiQTViD_EbcrdZ2zCsuc5yPRDuihqq1bVEopt5dFZhAvLwVTESEMnus9060kbV-8NMEzQENHzOIoXB4eQnCOYt0AEYRjlRLEQ46NmoZGOjp4KI86mSTQbnDN9DFNVbXrdDnubf8ZCLSwMuIwpCxqL2Zvr3dJSU6vvZ2qCOfIGWeRFcp4HxMlp8v-Qj4FUImAwdIqiHErkX78SofcPefk" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div class="absolute bottom-8 left-8 text-white text-left">
+            <p class="font-headline-md">24/7 Response Time</p>
+            <p class="font-body-md opacity-80">Our specialized experts are standing by.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Contact Grid -->
+    <section class="py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop bg-white">
+      <div class="max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+          <!-- Contact Form -->
+          <div
+            class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-[2rem] shadow-sm border border-outline-variant/20">
+            <h2 class="font-headline-lg text-on-surface mb-8">Send us a message</h2>
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label class="font-label-sm text-on-surface-variant block">NAME</label>
+                  <input
+                    class="w-full bg-white border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                    placeholder="John Doe" type="text" />
+                </div>
+                <div class="space-y-2">
+                  <label class="font-label-sm text-on-surface-variant block">EMAIL ADDRESS</label>
+                  <input
+                    class="w-full bg-white border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                    placeholder="john@example.com" type="email" />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label class="font-label-sm text-on-surface-variant block">SUBJECT</label>
+                <select
+                  class="w-full bg-white border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none appearance-none">
+                  <option>General Inquiry</option>
+                  <option>Product Specification</option>
+                  <option>Dealership Request</option>
+                  <option>Project Consultation</option>
+                </select>
+              </div>
+              <div class="space-y-2">
+                <label class="font-label-sm text-on-surface-variant block">MESSAGE</label>
+                <textarea
+                  class="w-full bg-white border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none"
+                  placeholder="How can we help you create something beautiful?" rows="5"></textarea>
+              </div>
+              <button
+                class="w-full md:w-auto bg-primary text-white px-10 py-4 rounded-xl font-headline-md text-[18px] transition-all hover:bg-primary-container hover:shadow-xl active:scale-95 flex items-center justify-center gap-3"
+                type="submit">
+                Send Message
+                <span class="material-symbols-outlined">send</span>
+              </button>
+            </form>
+          </div>
+          <!-- Contact Details -->
+          <div class="lg:col-span-5 space-y-gutter">
+            <!-- Office Details -->
+            <div
+              class="bg-surface-container p-8 rounded-[2rem] border border-outline-variant/20 relative overflow-hidden group">
+              <div
+                class="absolute -right-10 -top-10 bg-primary/5 w-40 h-40 rounded-full group-hover:scale-125 transition-transform duration-700">
+              </div>
+              <h3 class="font-headline-md text-on-surface mb-6">Headquarters</h3>
+              <div class="space-y-6">
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm shrink-0">
+                    <span class="material-symbols-outlined text-primary">location_on</span>
+                  </div>
+                  <div>
+                    <p class="font-label-sm text-on-surface-variant mb-1">OFFICE ADDRESS</p>
+                    <p class="font-body-lg text-on-surface leading-relaxed">Plot No. 123, GIDC Estate,<br />Baroda,
+                      Gujarat 382445</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm shrink-0">
+                    <span class="material-symbols-outlined text-primary">call</span>
+                  </div>
+                  <div>
+                    <p class="font-label-sm text-on-surface-variant mb-1">PHONE NUMBER</p>
+                    <p class="font-body-lg text-on-surface">+918000932228</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm shrink-0">
+                    <span class="material-symbols-outlined text-primary">mail</span>
+                  </div>
+                  <div>
+                    <p class="font-label-sm text-on-surface-variant mb-1">EMAIL SUPPORT</p>
+                    <p class="font-body-lg text-on-surface">care@ushapaints.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Social Connect -->
+            <div class="bg-tertiary-fixed p-8 rounded-[2rem] border border-tertiary/10">
+              <h3 class="font-headline-md text-on-tertiary-fixed mb-6">Follow the Journey</h3>
+              <div class="flex gap-4">
+                <a class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-tertiary hover:bg-tertiary hover:text-white transition-all duration-300 shadow-md transform hover:-translate-y-1"
+                  href="#">
+                  <span class="material-symbols-outlined">public</span>
+                </a>
+                <a class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-md transform hover:-translate-y-1"
+                  href="#">
+                  <span class="material-symbols-outlined">camera_enhance</span>
+                </a>
+                <a class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-all duration-300 shadow-md transform hover:-translate-y-1"
+                  href="#">
+                  <span class="material-symbols-outlined">video_library</span>
+                </a>
+                <a class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-on-surface hover:bg-on-surface hover:text-white transition-all duration-300 shadow-md transform hover:-translate-y-1"
+                  href="#">
+                  <span class="material-symbols-outlined">post_add</span>
+                </a>
+              </div>
+              <p class="font-body-md text-on-tertiary-fixed-variant mt-6">
+                Share your colorful transformations with us using #UshaPaints
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Interactive Map Section -->
+    <section class="py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop">
+      <div class="max-w-container-max mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <h2 class="font-headline-lg text-on-surface">Our Gujarat Hub</h2>
+            <p class="font-body-lg text-on-surface-variant">Strategically located for industrial excellence.</p>
+          </div>
+          <a class="flex items-center gap-2 text-primary font-headline-md text-[16px] hover:underline" href="#">
+            Get Directions
+            <span class="material-symbols-outlined">directions</span>
+          </a>
+        </div>
+        <div class="w-full h-[500px] rounded-[3rem] overflow-hidden shadow-inner border-4 border-white relative group">
+          <img class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
+            data-location="Ahmedabad, Gujarat"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB0ybJYJtkW_128D73__S9jmqIx-y5ho3sy8BvxZ5R8SjdNTC7pVazx9_L54VqHN8TEp-vngSCNyEDOH10yIZutYK-LG8VVlERnP2admW12j9xAUfHDZ93mJJ0PHp_Ezan2_F1PeKMWzUY_QqCLsWfQxv8nNtKv628l5nARY9qB1YU1Ujw8WNuV_JsDxWQqgBwJVpyg5ziyj7CFdm32GO2Ze_tNaAMD5o9y4LKhzdum-KvvlhuFuwN5rDli70n-ixMBbt_93FqEoM" />
+          <!-- Map Pin Overlays -->
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+            <div class="bg-primary text-white px-4 py-2 rounded-xl shadow-2xl mb-2 flex items-center gap-2 scale-110">
+              <span class="font-bold text-[14px]">USHA PAINTS HQ</span>
+            </div>
+            <div class="w-6 h-6 bg-primary border-4 border-white rounded-full shadow-lg animate-bounce"></div>
+          </div>
+          <!-- Glass Info Card on Map -->
+          <div class="absolute bottom-10 left-10 glass-card p-6 rounded-2xl max-w-sm hidden md:block">
+            <p class="font-label-sm text-primary uppercase mb-2">Service Radius</p>
+            <p class="font-body-md text-on-surface">We provide nationwide delivery and local technical support across
+              Gujarat within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="bg-surface-container-lowest dark:bg-on-surface border-t-4 border-tertiary shadow-2xl-up w-full rounded-t-xl overflow-hidden mt-12">
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <div class="col-span-1 md:col-span-1">
+        <img src="logo.png" alt="USHA PAINTS Logo" class="h-10 w-auto object-contain mb-6" />
+        <p class="text-on-surface-variant dark:text-outline font-body-md">
+          Leading the industry with high-performance acrylic distempers and premium interior finishes since 1984.
+        </p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="font-headline-md text-primary mb-2">Products</h4>
+        <a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md hover:underline decoration-tertiary decoration-2 underline-offset-4"
+          href="#">Interior Paints</a>
+        <a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md hover:underline decoration-tertiary decoration-2 underline-offset-4"
+          href="#">Exterior Paints</a>
+        <a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md hover:underline decoration-tertiary decoration-2 underline-offset-4"
+          href="#">Enamels</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="font-headline-md text-primary mb-2">Technical</h4>
+        <a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md hover:underline decoration-tertiary decoration-2 underline-offset-4"
+          href="#">Wall Putty</a>
+        <a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md hover:underline decoration-tertiary decoration-2 underline-offset-4"
+          href="#">Distempers</a>
+        <a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md hover:underline decoration-tertiary decoration-2 underline-offset-4"
+          href="#">Color Cards</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="font-headline-md text-primary mb-2">Legal</h4>
+        <a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md hover:underline decoration-tertiary decoration-2 underline-offset-4"
+          href="#">Privacy Policy</a>
+        <a class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md hover:underline decoration-tertiary decoration-2 underline-offset-4"
+          href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div
+      class="border-t border-outline-variant/10 py-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center text-on-surface-variant dark:text-outline font-body-md opacity-80">
+      <p>© 2024 USHA PAINTS. All Rights Reserved. Manufactured with Excellence.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <span class="material-symbols-outlined text-primary"
+          style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+        <span class="material-symbols-outlined text-tertiary"
+          style="font-variation-settings: 'FILL' 1;">high_quality</span>
+        <span class="material-symbols-outlined text-secondary"
+          style="font-variation-settings: 'FILL' 1;">verified</span>
+      </div>
+    </div>
+  </footer>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[100] bg-surface flex flex-col pt-24 px-6 gap-6 transform translate-x-full transition-transform duration-300 md:hidden overflow-y-auto pb-10">
+  <div class="flex justify-between items-center absolute top-0 left-0 right-0 h-20 px-6">
+    <a href="index.html" class="flex items-center">
+      <img src="logo.png" alt="USHA PAINTS Logo" class="h-10 w-auto object-contain" />
+    </a>
+    <button id="mobile-menu-close" class="text-on-surface p-2">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4 mt-8" href="index.html">Home</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="product.html">Products</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="about_us.html">About Us</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="dealer.html">Dealers</a>
+  <a class="text-on-surface-variant hover:text-primary transition-colors font-bold text-lg border-b border-outline-variant/30 pb-4" href="contact.html">Contact</a>
+  <button class="bg-primary text-on-primary px-5 py-3 rounded-full font-bold text-base mt-4 active:scale-95 transition-all">
+    Get a Quote
+  </button>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-menu-close');
+    if(mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+      });
+    }
+    if(mobileClose && mobileMenu) {
+      mobileClose.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+      });
+    }
+  });
+</script>
+
+
+</body>
+
+
+</html>
